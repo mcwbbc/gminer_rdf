@@ -1,0 +1,16 @@
+# sparql queries
+
+# basic query to select everything from the inserted rat strain owl file
+PREFIX obo:<http://purl.org/obo/owl/obo#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl11:<http://www.w3.org/2006/12/owl11#onClass>
+PREFIX oboContent:<http://purl.org/obo/owl/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl2:<http://www.w3.org/2006/12/owl2#onClass>
+PREFIX oboInOwl:<http://www.geneontology.org/formats/oboInOwl#>
+PREFIX oban:<http://purl.org/obo/oban/>
+select ?s ?p ?o WHERE {
+ ?s ?p ?o .
+} LIMIT 100
